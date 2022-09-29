@@ -5,7 +5,7 @@ function FeedPage(): JSX.Element {
 
     return (
         <Box>
-            products
+            feed
         </Box>
     )
 }
