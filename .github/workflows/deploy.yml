@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       # Build
-      - run: npm ci
+      - run: yarn install
       # Test
-      - run: npm linter
-      - run: npm test
-      - run: npm test-coverage
+      - run: yarn linter
+      - run: yarn test
+      - run: yarn test-coverage
       # Build
-      - run: build
+      - run: yarn build
