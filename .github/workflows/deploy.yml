@@ -18,7 +18,7 @@ jobs:
       # Build
       - run: yarn install
       # Test
-      - run: yarn linter
+      - run: yarn lint
       - run: yarn test
       - run: yarn test-coverage
       # Build

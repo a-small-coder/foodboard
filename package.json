@@ -13,6 +13,7 @@
     "@types/node": "^16.11.62",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "@babel/eslint-parser": "^7.5.4",
     "framer-motion": "^7.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "linter": "webpack --env development --watch",
+    "lint": "eslint",
     "test-coverage": "react-scripts test --coverage",
     "start": "react-scripts start",
     "build": "react-scripts build",
