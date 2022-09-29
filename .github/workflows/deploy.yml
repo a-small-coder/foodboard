@@ -1,0 +1,25 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Starging Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: ${{ matrix.node-version }}
+      # Build
+      - run: npm ci
+      # Test
+      - run: npm linter
+      - run: npm test
+      - run: npm test-coverage
+      # Build
+      - run: build
