@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from '../pages/App';
+import ProfilePage from '../../pages/ProfilePage';
 
 test('renders react element', () => {
-  render(<App />);
-  const element = screen.getByText(/Главная/i);
+  render(<ProfilePage />);
+  const element = screen.getByText(/profile/i);
   expect(element).toBeInTheDocument();
 });

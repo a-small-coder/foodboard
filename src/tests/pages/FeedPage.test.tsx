@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from '../pages/App';
+import FeedPage from '../../pages/FeedPage';
 
 test('renders react element', () => {
-  render(<App />);
-  const element = screen.getByText(/Главная/i);
+  render(<FeedPage />);
+  const element = screen.getByText(/feed/i);
   expect(element).toBeInTheDocument();
 });

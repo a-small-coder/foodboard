@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from '../pages/App';
+import ProductsPage from '../../pages/ProductsPage';
 
 test('renders react element', () => {
-  render(<App />);
-  const element = screen.getByText(/Главная/i);
+  render(<ProductsPage />);
+  const element = screen.getByText(/products/i);
   expect(element).toBeInTheDocument();
 });

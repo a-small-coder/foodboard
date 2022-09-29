@@ -21,7 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "webpack --env development --watch",
+    "linter": "webpack --env development --watch",
+    "test-coverage": "react-scripts test --coverage",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watch",

@@ -16,11 +16,11 @@ function Footer(): JSX.Element {
     },
     {
       icon: user,
-      title: "profile",
+      title: "profile2",
     },
     {
       icon: user,
-      title: "profile",
+      title: "profile1",
     }
   ]
 
